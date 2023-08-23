@@ -4,28 +4,38 @@
     box-sizing: border-box;
 }
 
+/* A vw é 1/100 da largura da janela e vh é 1/100 da altura da janela. */
+
 .game-board {
-width: 100%;
-height: 500px;
-border-bottom: 2em solid hsla(103, 94%, 54%, 0.726);
-margin: 0 auto;
-position: relative;
-overflow: hidden;
-background: linear-gradient(hsl(184, 78%, 79%),hsl(0, 0%, 100%));
+    width: 100%;
+    /* height: 500px; */
+    min-height: 82vh;
+    border-bottom: 2em solid hsla(103, 94%, 54%, 0.726);
+    margin: 0 auto;
+    position: relative;
+    overflow: hidden;
+    background: linear-gradient(hsl(184, 78%, 79%),hsl(0, 0%, 100%));
 }
+
+/* .button-hidden { */
+    /* color: transparent; Torna o conteúdo do botão invisível */
+    /* background-color: transparent; Torna o fundo do botão invisível */
+    /* border: none; Remove a borda do botão */
+    /* visibility: hidden; Torna o botão invisível, mas ainda ocupa espaço */
+ /* }  */
 
 .clouds {
     position: absolute;
     width: 550px;
     animation: clouds-animation 10s infinite linear;
-
+    
 }
 
 .pipe {
-position: absolute;
-bottom: 0;
-width: 80px;
-animation: pipe-animation 2s infinite linear;
+    position: absolute;
+    bottom: 0;
+    width: 80px;
+    animation: pipe-animation 2s infinite linear;
 }
 
 .mario {
@@ -54,19 +64,19 @@ animation: pipe-animation 2s infinite linear;
     0% {
         bottom: 0;
     }
-
+    
     40% {
         bottom: 180px;
     }
-
+    
     50% {
         bottom: 180px;
     }
-
+    
     60% {
         bottom: 180px;
     }
-
+    
     100% {
         bottom: 0;
     }
@@ -84,7 +94,7 @@ animation: pipe-animation 2s infinite linear;
 
 .button-voltar , 
 .button-restart {
-
+    
     background-color: #ee665c;
     border-radius: 8px;
     color: #fff;
@@ -95,6 +105,21 @@ animation: pipe-animation 2s infinite linear;
     padding: 15px;
     width: 100%;
     cursor: pointer;
+}
+
+.button-jump {
+
+    /* border-radius: 35%; */
+    max-width: 20vw;
+    margin-left: 470px;
+    padding: 15px;
+    width: 100%;
+    position: relative;
+    bottom: 53px;
+    border: none;
+    background-color: transparent;
+    /* color: transparent; */
+    /* background: linear-gradient(hsl(184, 78%, 79%),hsl(0, 0%, 100%)); */
 }
 
 

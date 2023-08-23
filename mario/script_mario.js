@@ -36,12 +36,13 @@ const loop = setInterval(() => {
 
 },10);
 
-const button = document.querySelector(".button");
+const button = document.querySelector(".button-jump");
 
 function restartGame() {
     window.location.reload(true)
     // console.log('click funcionando')
 }
 
-document.addEventListener('keydown', jump);
+// document.addEventListener('keydown', jump);
+button.addEventListener('click', jump);
 
