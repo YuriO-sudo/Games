@@ -93,33 +93,29 @@
 }
 
 .button-voltar , 
-.button-restart {
+.button-restart,
+.button-jump{
     
-    background-color: #ee665c;
+    background-color: hsla(103, 94%, 54%, 0.726);
     border-radius: 8px;
-    color: #fff;
+    color: #050505;
     font-size: 1em;
-    max-width: 150px;
-    margin-left: 300px;
-    margin-top: 28px;
-    padding: 15px;
+    max-width: 30%;
+    margin-top: .7rem;
+    padding: 1%;
+    margin-left: 2%;
     width: 100%;
     cursor: pointer;
 }
 
-.button-jump {
-
-    /* border-radius: 35%; */
-    max-width: 20vw;
-    margin-left: 470px;
-    padding: 15px;
-    width: 100%;
-    position: relative;
-    bottom: 53px;
-    border: none;
-    background-color: transparent;
-    /* color: transparent; */
-    /* background: linear-gradient(hsl(184, 78%, 79%),hsl(0, 0%, 100%)); */
+.button-voltar:hover {
+    background: linear-gradient(hsl(0, 100%, 50%),hsl(0, 77%, 22%));
 }
 
+.button-restart:hover {
+    background: linear-gradient(hsl(71, 100%, 52%),hsl(0, 0%, 0%));
+}
 
+.button-jump:hover {
+    background: linear-gradient(hsl(113, 100%, 50%),hsl(115, 100%, 16%));
+}

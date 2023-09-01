@@ -21,16 +21,11 @@ body {
   padding: 16px;
 }
 
-@media screen and (max-height: 450px) {
-  .sidenav {padding-top: 15px;}
-  .sidenav a {font-size: 18px;}
-}
-
 
 .flex-container {
    
     flex-wrap: nowrap;
-    background-color: #eefeff;
+    /* background-color: #eefeff; */
   }
   
   .flex-container > div {

@@ -1,18 +1,17 @@
-//aqui tem as 4 fotos só que não funciona o click
-//mas os 4 cards estão alinhadas no grid
+
 
 // Função que cria um link com uma imagem
 const createImageLink = (imageSrc, linkUrl) => {
-    const linkElement = document.createElement('a');
-    linkElement.href = linkUrl;
+    const linkElement = document.createElement('a')
+    linkElement.href = linkUrl
 
-    const imageElement = document.createElement('img');
-    imageElement.src = imageSrc;
+    const imageElement = document.createElement('img')
+    imageElement.src = imageSrc
    
 
-    linkElement.appendChild(imageElement);
+    linkElement.appendChild(imageElement)
 
-    return linkElement;
+    return linkElement
 };
 
 const grid = document.querySelector('.grid')
@@ -21,23 +20,15 @@ const linksData = [
     { imageSrc: './home_images/mario.png' , linkUrl: './mario/index_mario.html' },
     { imageSrc: './home_images/cerebro.png', linkUrl: './jogo_memoria/login.html'},
     { imageSrc: './home_images/letraA.png', linkUrl: './abecedario/abecedario.html' },
-    { imageSrc: './home_images/pikachu.png', linkUrl: './pokedex/pokemon.html' },
-];
+    { imageSrc: './home_images/pikachu.png', linkUrl: './pokedex/pokemon.html' }
+]
 
 linksData.forEach(linkData => {
-    const imageLink = createImageLink(linkData.imageSrc, linkData.linkUrl);
+    const imageLink = createImageLink(linkData.imageSrc, linkData.linkUrl)
     // const imageLink = createImageLink(linkData.imageSrc, linkData.linkUrl);
-    grid.appendChild(imageLink);
+    grid.appendChild(imageLink)
 });
 
-// declaração das imagens que tem na pasta , 
-// const characters = [
-//     'cerebro',
-//     'mario',
-//     'letraA',
-//     'pikachu',
-    
-// ]
 
 // função que cria um elemento no html usando tag e o nome da classe como parâmetros
 const createElement = (tag, className) => {
@@ -102,16 +93,16 @@ const createCard = (character) => {
 }
 
 // aqui é um loop que carrega as 5 cartas da tela inicial
-const loadHome = () => {
+// const loadHome = () => {
        
-        characters.forEach((character) => {
-        const card = createCard(character)
-        grid.appendChild(card)
+//         characters.forEach((character) => {
+//         const card = createCard(character)
+//         grid.appendChild(card)
         
-    })
-}
+//     })
+// }
 
-    loadHome()
+//     loadHome()
 
 
 

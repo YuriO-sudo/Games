@@ -25,29 +25,51 @@ main{
     padding: 20px 20px 50px;
 }
 
-header, 
-.button-voltar,
-.button-restart
- {
-       
+header
+{
     display: flex;
-    align-items: center;
+    /* align-items: center; */
     justify-content: space-between;
     background-color: rgba(255, 255, 255, 0.8);
     font-size: 1.2em;
     width: 100%;
-    max-width: 800px;
+    max-width: 750px;
     padding: 30px;
-    margin: 0 0 30px;
+    /* margin: 0 0 30px; */
+    border-radius: 5px;
+    /* pra descer o header e ficar mais junto com as cartas usei o position: relative e um bottom negativo */
+    position: relative;
+    top: 25px;
+    bottom: -50px;
+    
+}
+
+.button-container{
+    display: flex;
+    justify-content: center; 
+     /* Centraliza horizontalmente os botões  */
+}
+
+.button-voltar,
+.button-restart
+{
+    background-color: rgba(255, 255, 255, 0.8);
+    font-size: 1.2em;
+    width: 100%;
+    max-width: 15vw;
+    padding: 3%;
+    margin: 0 170px;
     border-radius: 5px;
     cursor: pointer;
-
+    /* pra subir o botão na tela usei o position: relative e um top negativo */
+    position: relative;
+    top: -50px;
 }
+
 
 .button-voltar:hover,
 .button-restart:hover {
     background: linear-gradient(#4a5206e5, #97a018, #e7f70a);
-
 }
 
 .grid {
@@ -65,6 +87,7 @@ header,
     /* background-color: #333; */
     border-radius: 5px;
     position: relative;
+    top: -45px;
     transition: all 400ms ease;
     transform-style: preserve-3d;
     background-color: #ccc;
