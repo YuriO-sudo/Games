@@ -1,0 +1,76 @@
+body {
+  font-family: "Lato", sans-serif;
+}
+
+.button-voltar {
+  background: #e91e63;
+  border-radius: 100%;
+  width: 80px;
+  height: 80px;
+  position: absolute;
+  top: 500px;
+  color: white;
+  text-align: center;
+  line-height: 80px;
+  transform: translate3d(0, 0, 0);
+  transition: transform ease-out 200ms;
+}
+
+
+.botoes {
+  display: grid;
+  grid-template-columns: repeat(8, 1fr); /* Define 3 colunas com tamanhos iguais */
+  gap: 10px; /* Espaçamento entre os botões */
+}
+
+.button-A, .button-B,
+.button-C, .button-D,
+.button-E, .button-F,
+.button-G, .button-H,
+.button-I, .button-J,
+.button-K, .button-L,
+.button-M, .button-N,
+.button-O, .button-P,
+.button-Q, .button-R,
+.button-S, .button-T,
+.button-U,.button-V,
+.button-W, .button-X,
+.button-Y, .button-Z {
+  text-align: center;
+  padding: 10px;
+  background-color: #3498db;
+  color: white;
+  font-size: 1rem;
+  cursor: pointer;
+  width: 80px;
+  height: 80px;
+  
+}
+
+ 
+
+  h1 {
+    color: blue;
+    text-align: center;
+    font-style: italic;
+  }
+
+
+.button-A:hover, .button-B:hover,
+.button-C:hover, .button-D:hover,
+.button-E:hover, .button-F:hover,
+.button-G:hover, .button-H:hover,
+.button-I:hover, .button-J:hover,
+.button-K:hover, .button-L:hover,
+.button-M:hover, .button-N:hover,
+.button-O:hover, .button-P:hover,
+.button-Q:hover, .button-R:hover,
+.button-S:hover, .button-T:hover,
+.button-U:hover, .button-V:hover,
+.button-W:hover, .button-X:hover,
+.button-Y:hover, .button-Z:hover
+{
+  background: linear-gradient(#4a5206e5, #97a018, #e7f70a);
+  border-radius: 55px;
+}
+

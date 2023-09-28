@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mario Jump</title>
+
+    <link rel="stylesheet" href="../css/mario.css">
+    <script src="../js/script_mario.js" defer></script>
+
+</head>
+<body>
+
+    <div class="game-board"> 
+        
+    <audio id="mario_theme_song" loop>
+        <source src="../sounds/mario_theme_song.mp3" type="audio/mpeg">
+    </audio>
+
+    <img src="../images_mario/clouds.png" class="clouds">
+    <img src="../images_mario/pipe.png" class="pipe">
+    <img src="../images_mario/mario.gif" class="mario">
+
+   </div>
+   
+   <!-- deixar dois botões na mesma div facilita o alinhamento usando CSS -->
+   <div>
+    <button class="button-voltar" onclick="window.location.href = '../../jogos.html'">Voltar</button>
+    <button class="button-jump">Pular</button>
+    <button onclick="restartGame()" class="button-restart">Reiniciar</button>
+    
+   </div>
+
+
+</body>
+</html>
