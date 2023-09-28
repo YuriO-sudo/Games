@@ -7,52 +7,6 @@ body {
     padding: 0;
 }
 
-.wrapper{
-    position: fixed;
-    top: 50%;
-    left: 50%;
-    transform: translate(-20%, -20%);
-  }
-  
-  a{
-    display: block;
-    width: 200px;
-    height: 40px;
-    line-height: 40px;
-    font-size: 18px;
-    font-family: sans-serif;
-    text-decoration: none;
-    color: #333;
-    border: 2px solid #333;
-    letter-spacing: 2px;
-    text-align: center;
-    position: relative;
-    transition: all .35s;
-  }
-  
-  a span{
-    position: relative;
-    z-index: 2;
-  }
-  
-  a:after{
-    position: absolute;
-    content: "";
-    top: 0;
-    left: 0;
-    width: 0;
-    height: 100%;
-    background: #ff003b;
-    transition: all .35s;
-  }
-  
-  a:hover{
-    color: #fff;
-  }
-  
-  a:hover:after{
-    width: 100%;
-  }
 
 .navbar {
     display: flex;
@@ -106,7 +60,7 @@ body {
     border-radius: 10px;
 }
 
-/* se mudar pra menos de 600px, tipo 400px não funciona  */
+/* se mudar pra menos de 600px, tipo 400px nï¿½o funciona  */
 @media (max-width: 700px) {
     .toggle-button {
         display: flex;
